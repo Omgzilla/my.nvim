@@ -1,0 +1,5 @@
+# ignore following
+*.DS_Store
+nvim/snapshots
+nvim/plugin
+
