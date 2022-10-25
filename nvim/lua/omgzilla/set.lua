@@ -1,7 +1,7 @@
 local set = {
     encoding = "utf-8",
     fileencoding = "utf-8",     -- the encoding written to a file
-    shell = "zsh",
+    --shell = "zsh",
     mouse = "a",                -- allow the mouse to be used in neovim
     title = true,
     completeopt = { "menuone", "noselect" }, -- mostly just for cmp
@@ -80,7 +80,7 @@ for key, value in pairs(set) do
   vim.opt[key] = value
 end
 
-vim.cmd "set path+=**" -- Finding files - search down into subfolders
+--vim.cmd "set path+=**" -- Finding files - search down into subfolders
 
 vim.cmd "filetype plugin indent on"
 
@@ -88,7 +88,7 @@ vim.cmd "filetype plugin indent on"
 vim.cmd "autocmd InsertLeave * set nopaste"
 
 -- Add asterisks in block comments
-vim.cmd "set formatoptions+=r"
+--vim.cmd "set formatoptions+=r"
 
 -- Run clipboard depending on OS
 vim.cmd "\
